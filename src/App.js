@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import CreateAccount from './CreateAccount.js'
 
 class App extends Component {
+
+  onCreateAccount() {
+    alert('Account Created');
+  }
+
   render() {
     return (
       <div className="App">
@@ -10,9 +16,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <CreateAccount onCreateAccount={this.onCreateAccount}/>
       </div>
     );
   }

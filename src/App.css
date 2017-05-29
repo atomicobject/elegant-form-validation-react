@@ -18,6 +18,25 @@
   font-size: large;
 }
 
+.CreateAccount .form-field {
+  margin: 0.7em;
+}
+
+.CreateAccount .form-field input {
+  font-size: large;
+  border-width: 0px 0px 3px 0px;
+  min-width: 250px;
+}
+
+.validation-error  {
+  color: red;
+}
+
+#CreateAccountButton {
+  font-size: 24px;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
